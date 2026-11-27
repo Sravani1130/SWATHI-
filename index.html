@@ -1,0 +1,285 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Mobile Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fecfef);
+            margin: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        nav {
+            background: rgba(255, 77, 136, 0.9);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            margin-top: 100px;
+            padding: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: none;
+            background: #ff4d88;
+            color: white;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff1a66;
+            transform: scale(1.1);
+        }
+
+        #messageBox {
+            margin-top: 30px;
+            font-size: 20px;
+            color: white;
+            opacity: 0;
+            transition: 1s;
+            white-space: pre-line;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .fade-in.delay {
+            animation-delay: 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating Balloons and Hearts */
+        .floating {
+            position: fixed;
+            bottom: -100px;
+            font-size: 30px;
+            z-index: 1;
+            pointer-events: none;
+            animation: floatUp 12s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-60vh) translateX(30px) rotate(15deg);
+            }
+
+            100% {
+                transform: translateY(-120vh) translateX(-30px) rotate(-15deg);
+                opacity: 0;
+            }
+        }
+
+        .slow {
+            animation-duration: 16s;
+        }
+
+        .fast {
+            animation-duration: 9s;
+        }
+
+        .medium {
+            animation-duration: 12s;
+        }
+
+        /* SPARKLE BACKGROUND ANIMATION */
+        .sparkles span {
+            position: fixed;
+            color: white;
+            font-size: 20px;
+            pointer-events: none;
+            z-index: 1;
+            animation: sparkle 3s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0.3) rotate(0deg);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5) rotate(180deg);
+                text-shadow: 0 0 10px white, 0 0 20px pink;
+            }
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            #messageBox {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+
+<!-- Birthday Content -->
+<div class="container">
+
+    <h1 class="fade-in">
+        ❤️ <b>Happiest birthday AKKOYYYYYYY</b> ❤️
+    </h1>
+
+    <p class="fade-in delay">
+        BE HAPPY AND STAY HEALTHY💖
+    </p>
+
+    <button class="btn" onclick="showMessage()">
+        Click Me 💖
+    </button>
+
+    <div id="messageBox"></div>
+
+    <!-- Next Page Button -->
+    <button class="btn"
+            id="nextButton"
+            onclick="window.location.href='memories.html'"
+            style="display:none;">
+         💖
+    </button>
+
+</div>
+
+<!-- Floating Balloons and Hearts -->
+<div class="floating slow" style="left:5%;">🎈</div>
+<div class="floating fast" style="left:15%;">❤️</div>
+<div class="floating medium" style="left:25%;">🎈</div>
+<div class="floating slow" style="left:35%;">💕</div>
+<div class="floating fast" style="left:45%;">🎈</div>
+<div class="floating medium" style="left:55%;">💖</div>
+<div class="floating slow" style="left:65%;">🎈</div>
+<div class="floating fast" style="left:75%;">💗</div>
+<div class="floating medium" style="left:85%;">🎈</div>
+<div class="floating slow" style="left:95%;">❤️</div>
+
+<div class="floating fast" style="left:10%; animation-delay:3s;">💝</div>
+<div class="floating slow" style="left:30%; animation-delay:5s;">🎈</div>
+<div class="floating medium" style="left:50%; animation-delay:2s;">💕</div>
+<div class="floating fast" style="left:70%; animation-delay:4s;">🎈</div>
+<div class="floating slow" style="left:90%; animation-delay:6s;">💖</div>
+
+<!-- SPARKLES -->
+<div class="sparkles">
+    <span style="top:10%; left:10%; animation-delay:0s;">✨</span>
+    <span style="top:20%; left:25%; animation-delay:1s;">⭐</span>
+    <span style="top:15%; left:45%; animation-delay:2s;">✨</span>
+    <span style="top:30%; left:65%; animation-delay:0.5s;">🌟</span>
+    <span style="top:12%; left:85%; animation-delay:1.5s;">✨</span>
+    <span style="top:45%; left:8%; animation-delay:2.5s;">⭐</span>
+    <span style="top:55%; left:20%; animation-delay:1s;">✨</span>
+    <span style="top:65%; left:40%; animation-delay:2s;">🌟</span>
+    <span style="top:50%; left:75%; animation-delay:0.5s;">✨</span>
+    <span style="top:70%; left:90%; animation-delay:1.5s;">⭐</span>
+    <span style="top:85%; left:15%; animation-delay:2s;">✨</span>
+    <span style="top:80%; left:55%; animation-delay:0.5s;">🌟</span>
+    <span style="top:90%; left:80%; animation-delay:1s;">✨</span>
+</div>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="WhatsApp Ptt 2026-04-19 at 8.16.14 AM (1).ogg" type="audio/ogg">
+</audio>
+
+<script>
+
+function showMessage() {
+
+    const msg = `
+This song is dedicated to you my PANDHI 💖
+once again happiest birthday💖`;
+
+    const box = document.getElementById("messageBox");
+
+    box.innerHTML = msg;
+    box.style.opacity = "1";
+
+    // Play music after clicking
+    const music = document.getElementById("bgMusic");
+
+    music.play().catch(function(error) {
+        console.log("Music could not start:", error);
+    });
+
+    // Show Next Page button
+    document.getElementById("nextButton").style.display = "inline-block";
+}
+
+</script>
+
+</body>
+</html>

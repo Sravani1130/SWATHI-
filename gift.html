@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memories</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #a18cd1, #fbc2eb);
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: rgba(255, 77, 136, 0.9);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h2 {
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* AUDIO PLAYER */
+        .audio-box {
+            margin-top: 20px;
+        }
+
+        audio {
+            width: 250px;
+        }
+
+        /* IMAGE STYLING */
+        img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.4s;
+            animation: zoomIn 1.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.15) rotate(2deg);
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* FLOWING HEARTS ANIMATION */
+        .hearts span {
+            position: fixed;
+            bottom: -50px;
+            font-size: 22px;
+            animation: float 10s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* NEXT PAGE BUTTON */
+        .next-btn {
+            display: inline-block;
+            margin: 40px 0;
+            padding: 12px 30px;
+            background: #ff4d88;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .next-btn:hover {
+            background: #ff1a66;
+            transform: scale(1.1);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+
+<div class="container">
+
+    <h2>HAPPIEST BIRTHDAY SUNDARI 🥰❤️</h2>
+
+    <!-- AUDIO PLAYER -->
+    <div class="audio-box">
+        <audio controls autoplay loop>
+            <source src="C:\Users\Somay\OneDrive\Desktop\SISTER\WhatsApp Audio 2026-11-27 at 11.41.00 AM.ogg" type="audio/ogg">
+            Your browser does not support audio.
+        </audio>
+    </div>
+
+    <!-- THREE IMAGES -->
+    <div class="gallery">
+
+        <img src="C:\Users\Somay\OneDrive\Desktop\SISTER\WhatsApp Image 2026-11-27 at 11.43.33 AM.jpeg" alt="Memory 2">
+
+    </div>
+
+    <!-- NEXT PAGE BUTTON -->
+    <a href="wishes.html" class="next-btn">
+        Next Page 💖
+    </a>
+
+</div>
+
+<!-- FLOWING HEARTS -->
+<div class="hearts">
+    <span style="left:5%; animation-delay:0s;">❤️</span>
+    <span style="left:15%; animation-delay:2s;">💖</span>
+    <span style="left:25%; animation-delay:4s;">💕</span>
+    <span style="left:35%; animation-delay:1s;">💗</span>
+    <span style="left:45%; animation-delay:3s;">💓</span>
+    <span style="left:55%; animation-delay:5s;">❤️</span>
+    <span style="left:65%; animation-delay:2.5s;">💖</span>
+    <span style="left:75%; animation-delay:4.5s;">💕</span>
+    <span style="left:85%; animation-delay:1.5s;">💗</span>
+    <span style="left:95%; animation-delay:3.5s;">💓</span>
+</div>
+
+</body>
+</html>

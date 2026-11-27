@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special Video for Akka ❤️</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+
+            background: linear-gradient(
+                -45deg,
+                #ffdde1,
+                #ee9ca7,
+                #fbc2eb,
+                #ffd6e7
+            );
+
+            background-size: 400% 400%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: rgba(255, 77, 136, 0.9);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* MAIN CONTENT */
+        .container {
+            padding: 25px 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 3px 8px #ff4d88;
+            animation: fadeDown 2s ease;
+        }
+
+        .subtitle {
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* VIDEO BOX */
+        .video-box {
+            width: 90%;
+            max-width: 480px;
+            margin: 30px auto;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: zoomIn 1.5s ease;
+        }
+
+        .video-box h3 {
+            color: #ff4d88;
+        }
+
+        video {
+            width: 100%;
+            max-height: 300px;
+            border-radius: 18px;
+            background: #222;
+            object-fit: contain;
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* NEXT BUTTON */
+        .next-btn {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 13px 35px;
+            background: #ff4d88;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: 0.3s;
+        }
+
+        .next-btn:hover {
+            background: #ff1a66;
+            transform: scale(1.1);
+        }
+
+        /* FLOATING HEARTS */
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            font-size: 25px;
+            animation: floatHeart 9s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 25px;
+            }
+
+            .subtitle {
+                font-size: 14px;
+            }
+
+            nav a {
+                font-size: 12px;
+                margin: 5px;
+            }
+
+            .video-box {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <h1> A Special Video ❤️</h1>
+
+        <p class="subtitle">
+           happy bornday to you...swathi! 🥹💕
+        </p>
+
+        <!-- YOUR VIDEO -->
+        <div class="video-box">
+
+            <h3>💗 Special wishes 💗</h3>
+
+            <video controls playsinline>
+                <source
+                    src="WhatsApp Video 2026-11-27 at 12.04.08 PM.mp4"
+                    type="video/mp4">
+
+                Your browser does not support video.
+            </video>
+
+        </div>
+
+        <h2 style="color:white;">
+            Love You pandhi! 🥰❤️
+        </h2>
+
+        <p class="subtitle">
+            once again happiest birthday to my dear akkawwwwww💕
+        </p>
+
+    </div>
+
+    <!-- FLOATING HEARTS -->
+    <div class="heart" style="left:5%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:20%; animation-delay:2s;">💖</div>
+    <div class="heart" style="left:35%; animation-delay:4s;">💕</div>
+    <div class="heart" style="left:50%; animation-delay:1s;">💗</div>
+    <div class="heart" style="left:65%; animation-delay:3s;">💓</div>
+    <div class="heart" style="left:80%; animation-delay:5s;">💞</div>
+    <div class="heart" style="left:95%; animation-delay:2s;">❤️</div>
+
+</body>
+</html>
